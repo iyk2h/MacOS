@@ -14,6 +14,7 @@ export ZSH="/Users/youngkyoonim/.oh-my-zsh"
 
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="gallois"
+
 #ZSH_THEME="agnoster"
 
 #history기반으로 최근에 입력한 명령어를 미리보기 형태로 보여주기
@@ -21,6 +22,12 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #단축어
 alias lf="ls -F"
+alias envconda="conda activate AlgorithmClass_3_1"
+alias cdgooglecode="cd ~/Google\ Drive/My\ Drive/Code/"
+alias cdgoogle="cd ~/Google\ Drive/My\ Drive/"
+alias cpfor="rsync -r ~/code/for* ~/Google\ Drive/My\ Drive/Code --exclude=.git"
+alias
+
 
 
 ####################################################################
@@ -128,7 +135,7 @@ else
     if [ -f "/Users/youngkyoonim/.pyenv/versions/anaconda3-2020.11/etc/profile.d/conda.sh" ]; then
         . "/Users/youngkyoonim/.pyenv/versions/anaconda3-2020.11/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/youngkyoonim/.pyenv/versions/anaconda3-2020.11/bin:$PATH"
+        export PATH="/Users/youngkyoonim/.pyenv/versions/anaconda3-2020.11/envs/AlgorithmClass_3_1/bin:$PATH"
     fi
 fi
 unset __conda_setup
